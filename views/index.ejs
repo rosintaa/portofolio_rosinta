@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MVC</title>
+    </head>
+
+    <body>
+        <h1> <%= dataSinta.title %> </h1>
+        <table border="1">
+            <tr>
+                <th>Nama</th>
+                <th>Username</th>
+            </tr>
+            <% dataSinta.data.forEach((item,i) => { %>
+                <tr>
+                    <td> <%= item.nama %> </td>
+                    <td> <%= item.username %> </td>
+                </tr>
+            <% }); %>
+        </table>
+    </body>
+
+</html>
